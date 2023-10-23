@@ -3,24 +3,24 @@ const app = express();
 require('dotenv').config();
 const PORT = process.env.PORT || 5000;
 const nodemailer = require('nodemailer');
-// const cors = require("cors");
+const cors = require("cors");
 
-// app.use(cors({
-//   origin: [
-//     "http://localhost:5500",
-//     "http://localhost:3000",
-//     "http://localhost:5000",
-//     "http://127.0.0.1:5500",
-//   ],
-//   credentials: true,
-// })
-// );
+app.use(cors({
+  origin: [
+    "http://localhost:5500",
+    "http://localhost:3000",
+    "http://localhost:5000",
+    "http://127.0.0.1:5500",
+  ],
+  credentials: true,
+})
+);
 
 app.use(express.json());
 app.use(express.static('client'));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/client/shopping.html'); // Replace 'index.html' with your HTML file's name and path
+  res.sendFile(__dirname + '/client/index.html'); // Replace 'index.html' with your HTML file's name and path
 });
 
 app.get("/test",(req,res)=>{

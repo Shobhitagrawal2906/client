@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.about hr {
+    border: 1px dashed blue;
+    margin: 0;
+}
+
+body hr{
+    border: 4px solid blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-fluid {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container-fluid .row {
+    margin-top: 50px;
+}
+
+section {
+    width: 100%;
+}
+
+section header {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+section header .logo {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    /* margin-left: 500px; */
+}
+
+section header {
+    margin: 0vh 18vh;
+}
+
+section header .logo span {
+    color: #f9004d;
+}
+
+section header ul {
+    list-style: none;
+}
+
+section header ul li {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 20px;
+}
+
+section header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+section header ul li a:hover {
+    color: #f9004d;
+}
+
+section header p {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: 1px solid #b36982;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+section header p:hover {
+    color: white;
+    background: #b36982;
+}
+
+section .texts h1 {
+    /* position: absolute; */
+    /* top: 30%; */
+    /* left: 4%; */
+    font-size: 2rem;
+    color: #950c3a;
+}
+
+section .texts h1 span {
+    color: #950c3a;
+}
+
+section .texts p {
+    /* width: 650px; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 4%; */
+    line-height: 26px;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+section .background_image img {
+    width: 750px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    margin-left: 25px;
+}
+
+section .btn {
+    position: relative;
+    top: 77%;
+    left: 38px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+section .btn .read {
+    background: #b36982;
+    color: white;
+    cursor: pointer;
+}
+
+section .btn p {
+    padding: 10px 25px;
+    background: none;
+    border: 2px solid #b36982;
+    cursor: pointer;
+}
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.our-shop-section {
+    margin: 0 20vh;
+}
+
+.all-shop-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.single-shop-box {
+    margin: 4vh;
+}
+
+.single-shop-box a:hover {
+    margin: 4vh;
+    color: lightgreen;
+}
+
+.single-shop-btn-at-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-for-product {
+    width: 28rem;
+    height: 70vh;
+    background: #3405a3;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #100a886b;
+}
+
+
+.card-for-product .card-for-product-border-top {
+    width: 60%;
+    height: 3%;
+    background: #6b64f3;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.card-for-product span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 2rem;
+}
+
+.card-for-product .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 1rem;
+    margin: 0rem 2rem;
+}
+
+.card-for-product .img {
+    width: 18rem;
+    height: 40vh;
+    /* background: #6b64f3; */
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.card-for-product img {
+    width: 18rem;
+    height: 33vh;
+    background: #6b64f3;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.card-for-product button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #6b64f3;
+    color: white;
+    font-weight: 600;
+}
+
+.card-for-product a {
+    color: white;
+}
+
+.card-for-product button:hover {
+    background: #534bf3;
+}
+
+
+.make-content-centre-box {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 20vh;
+    margin: 5vh;
+}
+
+.make-content-centre-box img {
+    height: 20vh;
+    width: 20vh;
+}
+
+.home-hero-section {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10vh 0vh;
+}
+
+.home-hero-section p{
+    padding: 50px;
+    height: auto;
+    width: auto;
+    background-color: #950c3a;
+    color: white;
+    border-radius: 10px;
+}
+
+#description p:hover{
+    background-color: rgb(1, 2, 53);
+    transition: 0.8s;
+}
+
+.texts {
+    margin: 5vh 3vh;
+    width: 40%;
+}
+
+.home-hero-section img {
+    position: relative;
+    height: 60;
+    width: 40%;
+}
+
+#s1 span{
+    color: yellow;
+}
+
+#s2 span{
+    color: yellow;
+}
+
+#s3 span{
+    color: yellow;
+}
+
+#s4 span{
+    color: yellow;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .texts {
+        width: 90%;
+        margin: 5vh 3vh;
+    }
+
+    .home-hero-section img {
+        position: relative;
+        width: 100%;
+        height: 60;
+    }
+
+    .card-for-product {
+        width: 23rem;
+    }
+}
+
+.footer {
+    background: #000;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .items a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .items a:hover {
+    color: lightgreen;
+}
+
+.footer .items ul {
+    width: 100%;
+}
+
+.footer .items ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .items a i {
+    font-size: 1.5em;
+    margin: 0% 1%;
+}
+
+.footer .bottom{
+    text-align: center;
+    color: lightgreen;
+    
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}

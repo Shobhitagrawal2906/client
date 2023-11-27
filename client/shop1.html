@@ -68,6 +68,20 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
     </script>
+    <style>
+        .card{margin: 20px;border-radius: 20px;}
+        .card:hover{box-shadow: 0 0 50px red; transition: 0.5s ease-in-out;}
+        .container-fluid{
+        background: #1FA2FF;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
+        background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
+        height: auto;
+        display: flex;
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        padding-top: 20px;
+        flex-direction: column;}
+    </style>
 </head>
 
 <body>
@@ -76,7 +90,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">
                     <img width="100" src="assets/images/mcu1.jpeg">
-                    <a href="/" class="logo">CKD<span> ONLINE<span class="ai-user"></span></a>
+                    <a href="shopping.html" class="logo">CKD<span> ONLINE<span class="ai-user"></span></a>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -88,7 +102,7 @@
 
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="shopping.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -103,11 +117,9 @@
     </section>
 
     <div>
-        <div class="container-fluid" style="background-image: linear-gradient(white,grey); height: 100vh;">
-            <h1 style="text-align: center;">Our Existing Products</h1>
-            <hr>
-
-            <div class="row">
+        <div class="container-fluid">
+            <h1 style="text-align: center;font-weight:700;">Our Existing Products</h1>
+            <div class="row" style="margin: 8px;">
                 <div class="col-md-3">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/images/kurkure.jpg" class="card-img-top" alt="Sorry image not available">
@@ -166,16 +178,75 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/kurkure.jpg" class="card-img-top" alt="Sorry image not available">
+                        <div class="card-body">
+                            <h5 class="card-title">Kurkure</h5>
+                            <div class="price">₹1.00</div>
+                            <hr>
+                            <p class="card-text">This is Product 1.Click on below button for succesfull payment</p>
+                            <!-- <button class="razorpay-payment-button btn filled small btn btn-outline-success" id="paybtn"
+                                type="button">Pay</button> -->
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#product1">
+                                Pay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/kurkure.jpg" class="card-img-top" alt="Sorry image not available">
+                        <div class="card-body">
+                            <h5 class="card-title">Kurkure</h5>
+                            <div class="price">₹1.00</div>
+                            <hr>
+                            <p class="card-text">This is Product 1.Click on below button for succesfull payment</p>
+                            <!-- <button class="razorpay-payment-button btn filled small btn btn-outline-success" id="paybtn"
+                                type="button">Pay</button> -->
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#product1">
+                                Pay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/kurkure.jpg" class="card-img-top" alt="Sorry image not available">
+                        <div class="card-body">
+                            <h5 class="card-title">Kurkure</h5>
+                            <div class="price">₹1.00</div>
+                            <hr>
+                            <p class="card-text">This is Product 1.Click on below button for succesfull payment</p>
+                            <!-- <button class="razorpay-payment-button btn filled small btn btn-outline-success" id="paybtn"
+                                type="button">Pay</button> -->
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#product1">
+                                Pay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/kurkure.jpg" class="card-img-top" alt="Sorry image not available">
+                        <div class="card-body">
+                            <h5 class="card-title">Kurkure</h5>
+                            <div class="price">₹1.00</div>
+                            <hr>
+                            <p class="card-text">This is Product 1.Click on below button for succesfull payment</p>
+                            <!-- <button class="razorpay-payment-button btn filled small btn btn-outline-success" id="paybtn"
+                                type="button">Pay</button> -->
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#product1">
+                                Pay
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
         </div>
     </div>
-
-
-
-    <hr>
-    <hr>
     <!-- Modal Starts -->
     <!-- Button trigger modal -->
 
@@ -450,11 +521,11 @@
 var OTP='';
     // Function to generate OTP
     function generateOTP() {
-        OTP = '';
+
         // Declare a string variable
         // which stores all string
         var string = '0123456789';
-        // let OTP = '';
+        let OTP = '';
 
         // Find the length of string
         var len = string.length;
@@ -511,21 +582,6 @@ Shobhit Gupta`;
             $('#optinchat-container').hide();
             
         }
-
-    // $.ajax({
-    //     url: 'save-code.php', // Replace with the actual URL of your server-side script
-    //     method: 'POST',
-    //     data: { code: generatedCode },
-    //     success: function(response) {
-    //         // Handle the response from the server, if needed
-    //         console.log('Code saved successfully.');
-    //     },
-    //     error: function() {
-    //         // Handle errors, if any
-    //         console.error('Failed to save the code.');
-    //     }
-    // });
-
 </script>
 
 
